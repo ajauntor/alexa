@@ -39,5 +39,28 @@ def talk(text):
                 print(command)
 
 
+    except:
+       pass
+    return command
+
+def run_alexa():
+    command = take_command()
+    print(command)
+    if 'play' in command:
+        song = command.replace('play', '')
+        talk('playing ' + song)
+        pywhatkit.playonyt(song)
+    elif 'time' in command:
+        time = datetime.datetime.now().strftime('%I:%M %p')
+    elif 'date' in command:
+        talk('sorry, I have a headache')
+    elif 'I love you' in command:
+        talk('Sorry I am in a relationship with wifi')
+    elif 'joke' in command:
+        talk(pyjokes.get_joke())
+    else:
+        talk('Please say the command again.')    
+
+
 while True:
     run_alexa()
