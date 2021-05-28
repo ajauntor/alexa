@@ -25,5 +25,9 @@ engine.setProperty('voice', voices[1].id)
 def talk(text):
     engine.say(text)
     engine.runAndWait()
+        
+   
 
 
+while True:
+    run_alexa()
