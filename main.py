@@ -27,9 +27,7 @@ def talk(text):
     engine.runAndWait()
         
    
-   def take_command():
-    try:
-        with sr.Microphone() as source:
+  
             print('listening...')
             voice = listener.listen(source)
             command = listener.recognize_google(voice)
