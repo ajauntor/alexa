@@ -39,9 +39,7 @@ def talk(text):
                 print(command)
 
 
-    except:
-       pass
-    return command
+  
 
 def run_alexa():
     command = take_command()
