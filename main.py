@@ -36,7 +36,7 @@ def talk(text):
             command = command.lower()
             if 'alexa' in command:
                 command = command.replace('alexa', '')
-                print(command)
+               
 
 
     except:
